@@ -44,6 +44,10 @@ jobs:
           mkdir -p allure-results
           pytest --env=${{ github.event.inputs.ENV }} --alluredir=allure-results -v
 
+      - name: Check allure-results directory
+        run: |
+          ls -la allure-results
+
       - name: Generate Allure Report
         if: always()
         run: |
