@@ -41,7 +41,7 @@ class ApiClient:
         """
         self.logger.info(f"Response [{response.status_code}]: {response.text}")
 
-    def setup(self,):
+    def setup(self, ):
         url = f"{self.base_url}/setup"
 
         self.logger.info(f"Request: POST {url} | Headers: {self.headers}")
@@ -141,12 +141,11 @@ class ApiClient:
         self.logger.info(f"Response [{response.status_code}]: {response.text}")
         return response
 
-    def upload_file(self, user_uuid, files, headers):
+    def upload_file(self, user_uuid, file_name, file_content, headers):
         url = f"{self.base_url}/users/{user_uuid}/avatar"
 
         files = [
-            ('avatar_file', (
-                'ava.jpg', open(get_path('ava.jpg'), 'rb'), 'image/jpeg'))
+            ('avatar_file', (file_name, file_content, 'image/jpeg'))
         ]
 
         self.headers.update({"X-Task-Id": f"{headers}"})
