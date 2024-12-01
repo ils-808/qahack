@@ -1,5 +1,0 @@
-INFO     ApiClient:ApiClient.py:85 Request: POST https://dev-gs.qa-playground.com/api/v1/users | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-7'}
-INFO     ApiClient:ApiClient.py:87 Response [422]: {"code":422,"message":"Users limit is reached: 20"}
-
-INFO     ApiClient:ApiClient.py:131 Request: POST https://dev-gs.qa-playground.com/api/v1/users/login | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-7'}
-INFO     ApiClient:ApiClient.py:133 Response [404]: {"code":404,"message":"Could not find user with given credentials"}
