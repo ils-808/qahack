@@ -144,9 +144,9 @@ class ApiClient:
     def upload_avatar(self, user_uuid, file_name, file_content, headers):
         url = f"{self.base_url}/users/{user_uuid}/avatar"
 
-        files = [
+        files = {
             ('avatar_file', (file_name, file_content, 'image/jpeg'))
-        ]
+        }
 
         self.headers.update({"X-Task-Id": f"{headers}"})
         self.logger.info(f"Request: PUT {url} | Headers: {self.headers}")
