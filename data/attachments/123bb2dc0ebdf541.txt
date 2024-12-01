@@ -1,0 +1,3 @@
+2024-12-01 20:11:11,720 - INFO - Request: GET https://dev-gs.qa-playground.com/api/v1/games/03dbad48-ad81-433d-9901-dd5332f5d9ee | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-9'}
+2024-12-01 20:11:12,247 - INFO - Response [404]: {"code":404,"message":"Could not find game with \"uuid\": 03dbad48-ad81-433d-9901-dd5332f5d9ee"}
+
