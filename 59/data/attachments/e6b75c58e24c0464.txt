@@ -1,2 +1,0 @@
-INFO     ApiClient:api_client.py:121 Request: DELETE https://dev-gs.qa-playground.com/api/v1/users/840fae08-ce04-43ed-97e7-aea2d3c226c8 | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-1'}
-INFO     ApiClient:api_client.py:123 Response [500]: {"code":500,"message":"Internal server error"}
