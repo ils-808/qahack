@@ -81,6 +81,12 @@ jobs:
           path: ./allure-report/history
           retention-days: 2
 
+      - name: Check history directory
+        if: always()
+        run: |
+          ls -la ./allure-report
+          ls -la ./allure-report/history || echo "History directory not found"
+
       - name: Deploy to GitHub Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v3
