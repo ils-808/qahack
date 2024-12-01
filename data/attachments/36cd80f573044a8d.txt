@@ -1,0 +1,7 @@
+ValidationError: 2 validation errors for PaymentResponse
+created_at
+  Field required [type=missing, input_value={'amount': 5999, 'order_u...44ec-a576-5eada4bdb16e'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+updated_at
+  Field required [type=missing, input_value={'amount': 5999, 'order_u...44ec-a576-5eada4bdb16e'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
