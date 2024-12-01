@@ -31,6 +31,14 @@ jobs:
           unzip allure.zip -d /opt/allure
           sudo ln -s /opt/allure/allure-2.22.0/bin/allure /usr/local/bin/allure
 
+      # Скачиваем предыдущую историю отчетов
+      - name: Download Allure history
+        uses: actions/download-artifact@v3
+        with:
+          name: allure-history
+          path: ./allure-results/history
+        if: always()
+
       # Добавляем команду для проверки файлов
       - name: Check test file existence
         run: |
@@ -62,6 +70,14 @@ jobs:
           name: allure-report
           path: ./allure-report
           retention-days: 1
+
+      - name: Save Allure history
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: allure-history
+          path: ./allure-report/history
+          retention-days: 3  # Сохраняем историю на неделю
 
       - name: Deploy to GitHub Pages
         if: always()

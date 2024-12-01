@@ -3,7 +3,7 @@ import os
 import pytest
 from filelock import FileLock
 
-from api_handler.ApiClient import ApiClient
+from api_handler.api_client import ApiClient
 
 # Конфигурация URL для разных сред
 ENVIRONMENTS = {
