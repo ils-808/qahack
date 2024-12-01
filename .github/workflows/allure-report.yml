@@ -37,10 +37,12 @@ jobs:
           pytest --env=${{ github.event.inputs.ENV }} --alluredir=allure-results -v
 
       - name: Generate Allure Report
+        if: always()
         run: |
           allure generate allure-results -o allure-report --clean
 
       - name: Upload Allure Report as Artifact
+        if: always()
         uses: actions/upload-artifact@v3
         with:
           name: allure-report
