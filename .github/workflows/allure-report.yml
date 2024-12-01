@@ -37,6 +37,9 @@ jobs:
           ls -la
           ls -la tests/endpoints
 
+      - name: Check available CPUs
+        run: grep -c ^processor /proc/cpuinfo
+
       - name: Run tests with Pytest
         env:
           ENV: ${{ github.event.inputs.ENV }}
