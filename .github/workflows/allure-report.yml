@@ -45,6 +45,7 @@ jobs:
           pytest --env=${{ github.event.inputs.ENV }} --alluredir=allure-results -v
 
       - name: Check allure-results directory
+        if: always()
         run: |
           ls -la allure-results
 
