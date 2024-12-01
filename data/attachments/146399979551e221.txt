@@ -1,0 +1,1 @@
+INFO     ApiClient:ApiClient.py:75 Request: GET https://dev-gs.qa-playground.com/api/v1/games | Params: {'query': None, 'offset': 0, 'limit': 10} | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-13'}
