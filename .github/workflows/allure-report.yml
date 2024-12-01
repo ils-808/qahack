@@ -31,14 +31,6 @@ jobs:
           unzip allure.zip -d /opt/allure
           sudo ln -s /opt/allure/allure-2.22.0/bin/allure /usr/local/bin/allure
 
-      # Скачиваем предыдущую историю отчетов
-      - name: Download Allure history
-        uses: actions/download-artifact@v3
-        with:
-          name: allure-history
-          path: ./allure-results/history
-        if: always()
-
       # Добавляем команду для проверки файлов
       - name: Check test file existence
         run: |
@@ -74,22 +66,17 @@ jobs:
           retention-days: 1
 
       - name: Save Allure history
+        uses: simple-elf/allure-report-action@master
         if: always()
-        uses: actions/upload-artifact@v3
         with:
-          name: allure-history
-          path: ./allure-report/history
-          retention-days: 2
-
-      - name: Check history directory
-        if: always()
-        run: |
-          ls -la ./allure-report
-          ls -la ./allure-report/history || echo "History directory not found"
+          allure_results: allure-results
+          allure_history: allure-history
+          keep_reports: 20
 
       - name: Deploy to GitHub Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./allure-report
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-history
