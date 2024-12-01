@@ -1,3 +1,0 @@
-2024-12-01 16:55:25,994 - INFO - Request: GET https://dev-gs.qa-playground.com/api/v1/categories/8126d35b-5336-41ad-981d-f245c3e05665/games | Params: {'query': '8126d35b-5336-41ad-981d-f245c3e05665', 'offset': 0, 'limit': 10} | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-10'}
-2024-12-01 16:55:27,323 - INFO - Response [500]: {"code":500,"message":"Internal server error"}
-

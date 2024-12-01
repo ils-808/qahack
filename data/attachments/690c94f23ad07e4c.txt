@@ -1,0 +1,3 @@
+2024-12-01 16:59:05,621 - INFO - Request: GET https://dev-gs.qa-playground.com/api/v1/users | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-19'}
+2024-12-01 16:59:06,942 - INFO - Response [500]: {"code":500,"message":"Internal server error"}
+
