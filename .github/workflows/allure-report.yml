@@ -37,6 +37,7 @@ jobs:
           ls -la tests/
           ls -la tests/endpoints
           cat tests/endpoints/ava.jpg || echo "File not found or unreadable"
+          cat tests/endpoints/ava.jpg || echo "File not found or unreadable"
         if: always()
 
       - name: Run tests with Pytest
@@ -47,36 +48,26 @@ jobs:
           pytest -n=auto --env=${{ github.event.inputs.ENV }} --alluredir=./allure-results -v
         if: always()
 
-      - name: Check allure-results directory
+      - name: Get Allure history
+        uses: actions/checkout@v2
         if: always()
-        run: |
-          ls -la ./allure-results
-
-      - name: Generate Allure Report
-        if: always()
-        run: |
-          allure generate ./allure-results -o ./allure-report --clean
-
-      - name: Upload Allure Report as Artifact
-        if: always()
-        uses: actions/upload-artifact@v3
+        continue-on-error: true
         with:
-          name: allure-report
-          path: ./allure-report
-          retention-days: 1
+          ref: gh-pages
+          path: gh-pages
 
-      - name: Save Allure history
+      - name: Allure Report action from marketplace
         uses: simple-elf/allure-report-action@master
         if: always()
         with:
-          allure_results: allure-results
-          allure_history: allure-history
+          allure_results: ./allure-results
+          allure_history: ./allure-history
           keep_reports: 20
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy report to Github Pages
         if: always()
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-history
+          PUBLISH_DIR: ./allure-history
