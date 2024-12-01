@@ -1,0 +1,45 @@
+2024-12-01 14:15:14,810 - INFO - Request: DELETE https://dev-gs.qa-playground.com/api/v1/users/8d87f45b-51dd-432d-9aae-db1069ec2f4b | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-1'}
+2024-12-01 14:15:14,810 - INFO - Request: DELETE https://dev-gs.qa-playground.com/api/v1/users/8d87f45b-51dd-432d-9aae-db1069ec2f4b | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-1'}
+2024-12-01 14:15:14,810 - INFO - Request: DELETE https://dev-gs.qa-playground.com/api/v1/users/8d87f45b-51dd-432d-9aae-db1069ec2f4b | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-1'}
+2024-12-01 14:15:14,810 - INFO - Request: DELETE https://dev-gs.qa-playground.com/api/v1/users/8d87f45b-51dd-432d-9aae-db1069ec2f4b | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-1'}
+2024-12-01 14:15:14,810 - INFO - Request: DELETE https://dev-gs.qa-playground.com/api/v1/users/8d87f45b-51dd-432d-9aae-db1069ec2f4b | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-1'}
+2024-12-01 14:15:14,810 - INFO - Request: DELETE https://dev-gs.qa-playground.com/api/v1/users/8d87f45b-51dd-432d-9aae-db1069ec2f4b | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-1'}
+2024-12-01 14:15:14,810 - INFO - Request: DELETE https://dev-gs.qa-playground.com/api/v1/users/8d87f45b-51dd-432d-9aae-db1069ec2f4b | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-1'}
+2024-12-01 14:15:14,810 - INFO - Request: DELETE https://dev-gs.qa-playground.com/api/v1/users/8d87f45b-51dd-432d-9aae-db1069ec2f4b | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-1'}
+2024-12-01 14:15:14,810 - INFO - Request: DELETE https://dev-gs.qa-playground.com/api/v1/users/8d87f45b-51dd-432d-9aae-db1069ec2f4b | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-1'}
+2024-12-01 14:15:14,810 - INFO - Request: DELETE https://dev-gs.qa-playground.com/api/v1/users/8d87f45b-51dd-432d-9aae-db1069ec2f4b | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-1'}
+2024-12-01 14:15:14,810 - INFO - Request: DELETE https://dev-gs.qa-playground.com/api/v1/users/8d87f45b-51dd-432d-9aae-db1069ec2f4b | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-1'}
+2024-12-01 14:15:14,810 - INFO - Request: DELETE https://dev-gs.qa-playground.com/api/v1/users/8d87f45b-51dd-432d-9aae-db1069ec2f4b | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-1'}
+2024-12-01 14:15:14,810 - INFO - Request: DELETE https://dev-gs.qa-playground.com/api/v1/users/8d87f45b-51dd-432d-9aae-db1069ec2f4b | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-1'}
+2024-12-01 14:15:14,810 - INFO - Request: DELETE https://dev-gs.qa-playground.com/api/v1/users/8d87f45b-51dd-432d-9aae-db1069ec2f4b | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-1'}
+2024-12-01 14:15:14,810 - INFO - Request: DELETE https://dev-gs.qa-playground.com/api/v1/users/8d87f45b-51dd-432d-9aae-db1069ec2f4b | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-1'}
+2024-12-01 14:15:15,494 - INFO - Response [500]: {"code":500,"message":"Internal server error"}
+
+2024-12-01 14:15:15,494 - INFO - Response [500]: {"code":500,"message":"Internal server error"}
+
+2024-12-01 14:15:15,494 - INFO - Response [500]: {"code":500,"message":"Internal server error"}
+
+2024-12-01 14:15:15,494 - INFO - Response [500]: {"code":500,"message":"Internal server error"}
+
+2024-12-01 14:15:15,494 - INFO - Response [500]: {"code":500,"message":"Internal server error"}
+
+2024-12-01 14:15:15,494 - INFO - Response [500]: {"code":500,"message":"Internal server error"}
+
+2024-12-01 14:15:15,494 - INFO - Response [500]: {"code":500,"message":"Internal server error"}
+
+2024-12-01 14:15:15,494 - INFO - Response [500]: {"code":500,"message":"Internal server error"}
+
+2024-12-01 14:15:15,494 - INFO - Response [500]: {"code":500,"message":"Internal server error"}
+
+2024-12-01 14:15:15,494 - INFO - Response [500]: {"code":500,"message":"Internal server error"}
+
+2024-12-01 14:15:15,494 - INFO - Response [500]: {"code":500,"message":"Internal server error"}
+
+2024-12-01 14:15:15,494 - INFO - Response [500]: {"code":500,"message":"Internal server error"}
+
+2024-12-01 14:15:15,494 - INFO - Response [500]: {"code":500,"message":"Internal server error"}
+
+2024-12-01 14:15:15,494 - INFO - Response [500]: {"code":500,"message":"Internal server error"}
+
+2024-12-01 14:15:15,494 - INFO - Response [500]: {"code":500,"message":"Internal server error"}
+
