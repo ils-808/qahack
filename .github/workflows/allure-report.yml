@@ -77,7 +77,7 @@ jobs:
         with:
           name: allure-history
           path: ./allure-report/history
-          retention-days: 3  # Сохраняем историю на неделю
+          retention-days: 2
 
       - name: Deploy to GitHub Pages
         if: always()
