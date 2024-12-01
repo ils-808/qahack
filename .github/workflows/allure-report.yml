@@ -28,7 +28,7 @@ jobs:
           ENV: ${{ github.event.inputs.ENV }}
         run: |
           mkdir -p allure-results
-          pytest --env=${{ github.event.inputs.ENV }} --alluredir=allure-results
+          pytest --env=${{ github.event.inputs.ENV }} --alluredir=allure-results -q
 
       - name: Generate Allure Report
         run: |
