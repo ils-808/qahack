@@ -1,0 +1,2 @@
+INFO     ApiClient:ApiClient.py:93 Request: POST https://dev-gs.qa-playground.com/api/v1/users | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-3'}
+INFO     ApiClient:ApiClient.py:95 Response [200]: {"avatar_url":"","email":"juarezjason@example.net","name":"Connie Hopkins","nickname":"","uuid":"7d539718-eb99-4fe2-9b46-50323839abd8"}

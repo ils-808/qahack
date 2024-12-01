@@ -1,2 +1,0 @@
-INFO     ApiClient:ApiClient.py:121 Request: DELETE https://release-gs.qa-playground.com/api/v1/users/899323b8-5025-41b3-93a3-85e7dce0473d | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-1'}
-INFO     ApiClient:ApiClient.py:123 Response [404]: {"code":404,"message":"Could not find user with \"uuid\": 899323b8-5025-41b3-93a3-85e7dce0473d"}
