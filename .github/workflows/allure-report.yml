@@ -32,13 +32,11 @@ jobs:
           sudo ln -s /opt/allure/allure-2.22.0/bin/allure /usr/local/bin/allure
 
       # Добавляем команду для проверки файлов
-      - name: List files in working directory
+      - name: Check test file existence
         run: |
-          ls -la
+          ls -la tests/
           ls -la tests/endpoints
-
-      - name: Check available CPUs
-        run: grep -c ^processor /proc/cpuinfo
+          cat tests/endpoints/ava.jpg || echo "File not found or unreadable"
 
       - name: Run tests with Pytest
         env:

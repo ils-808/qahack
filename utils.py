@@ -2,7 +2,9 @@ from pathlib import Path
 
 
 def get_path(file_name):
-    return str(Path(__file__).parent.joinpath(f"{file_name}"))
+    path = Path(__file__).parent.joinpath(f"{file_name}")
+    print(f"Resolved file path: {path}")
+    return str(path)
 
 
 def prepare_file(file_name):
@@ -14,6 +16,11 @@ def prepare_file(file_name):
     """
     file_path = get_path(file_name)
     print(f"Preparing file: {file_path}")
-    with open(file_path, 'rb') as file:  # Открываем файл в бинарном режиме
-        file_contents = file.read()  # Читаем содержимое файла
+    try:
+        with open(file_path, 'rb') as file:
+            file_contents = file.read()
+        print(f"File read successfully: {file_name}")
+    except Exception as e:
+        print(f"Error reading file {file_name}: {e}")
+        raise
     return file_contents
