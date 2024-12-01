@@ -1,0 +1,6 @@
+2024-12-01 20:29:51,031 - INFO - Request: POST https://dev-gs.qa-playground.com/api/v1/users | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-7'}
+2024-12-01 20:29:51,906 - INFO - Response [200]: {"avatar_url":"","email":"d4@l.66d","name":"Jose Haas","nickname":"lallison","uuid":"11acc1e9-dd18-4853-81df-2bf162584dcf"}
+
+2024-12-01 20:29:51,906 - INFO - Request: POST https://dev-gs.qa-playground.com/api/v1/users/login | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-7'}
+2024-12-01 20:29:52,415 - INFO - Response [404]: {"code":404,"message":"Could not find user with given credentials"}
+
