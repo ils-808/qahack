@@ -1,0 +1,6 @@
+2024-12-01 20:48:30,594 - INFO - Request: POST https://release-gs.qa-playground.com/api/v1/users | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-7'}
+2024-12-01 20:48:31,280 - INFO - Response [200]: {"avatar_url":"","email":"d4@l.66d","name":"Patricia Calhoun","nickname":"gtaylor","uuid":"57047cca-73dc-4467-81df-b0b426a774ae"}
+
+2024-12-01 20:48:31,280 - INFO - Request: POST https://release-gs.qa-playground.com/api/v1/users/login | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-7'}
+2024-12-01 20:48:31,845 - INFO - Response [200]: {"avatar_url":"","email":"d4@l.66d","name":"Patricia Calhoun","nickname":"gtaylor","uuid":"57047cca-73dc-4467-81df-b0b426a774ae"}
+
