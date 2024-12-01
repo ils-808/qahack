@@ -1,0 +1,6 @@
+2024-12-01 17:12:57,912 - INFO - Request: POST https://dev-gs.qa-playground.com/api/v1/users | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-7'}
+2024-12-01 17:12:58,776 - INFO - Response [200]: {"avatar_url":"","email":"d4@l.66d","name":"Cynthia Berry","nickname":"edavis","uuid":"5c7f11d2-4006-4e07-aa1a-9e71fb1e1e53"}
+
+2024-12-01 17:12:58,777 - INFO - Request: POST https://dev-gs.qa-playground.com/api/v1/users/login | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-7'}
+2024-12-01 17:12:59,940 - INFO - Response [404]: {"code":404,"message":"Could not find user with given credentials"}
+
