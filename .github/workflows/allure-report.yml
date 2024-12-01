@@ -42,17 +42,17 @@ jobs:
           ENV: ${{ github.event.inputs.ENV }}
         run: |
           mkdir -p allure-results
-          pytest --env=${{ github.event.inputs.ENV }} --alluredir=allure-results -v
+          pytest --env=${{ github.event.inputs.ENV }} --alluredir=./allure-results -v
 
       - name: Check allure-results directory
         if: always()
         run: |
-          ls -la allure-results
+          ls -la ./allure-results
 
       - name: Generate Allure Report
         if: always()
         run: |
-          allure generate allure-results -o allure-report --clean
+          allure generate ./allure-results -o allure-report --clean
 
       - name: Upload Allure Report as Artifact
         if: always()
