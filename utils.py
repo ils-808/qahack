@@ -14,6 +14,7 @@ def prepare_file(file_name, file_type):
     :return: Кортеж с параметрами для передачи файла.
     """
     file_path = get_path(file_name)
+    print(f"File path: {file_path}")
     return [
         ('avatar_file', (file_name, open(file_path, 'rb'), file_type))
     ]
