@@ -1,3 +1,0 @@
-2024-12-01 16:00:24,273 - INFO - Request: DELETE https://dev-gs.qa-playground.com/api/v1/users/218969e7-8f64-48c6-aec3-5d34dfdb3c2b | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-1'}
-2024-12-01 16:00:25,367 - INFO - Response [500]: {"code":500,"message":"Internal server error"}
-
