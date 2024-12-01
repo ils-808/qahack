@@ -37,7 +37,7 @@ pytest --env=prod -n=2 --alluredir=./allure-results
 5. Wait for the execution of both <a target="_blank" href="https://github.com/ils-808/qahack/actionsl">workflows</a>
    1. The first workflow - test execution
    2. The second workflow - generation of the allure report (GitHub Pages)
-6. View the report in the published <a target="_blank" href="ils-808.github.io/qahack/">page</a>
+6. View the report in the published <a target="_blank" href="https://ils-808.github.io/qahack/">page</a>
 
 > When the first workflow is executed, an allure report is also generated as artifact, TTL = 1 day.
 > It can be downloaded and run with the command `allure generate ./allure-results -o ./allure-report --clean`
