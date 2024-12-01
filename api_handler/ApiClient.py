@@ -141,7 +141,7 @@ class ApiClient:
         self.logger.info(f"Response [{response.status_code}]: {response.text}")
         return response
 
-    def upload_file(self, user_uuid, file_name, file_content, headers):
+    def upload_avatar(self, user_uuid, file_name, file_content, headers):
         url = f"{self.base_url}/users/{user_uuid}/avatar"
 
         files = [

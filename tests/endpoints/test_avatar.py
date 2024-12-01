@@ -20,9 +20,8 @@ def test_update_avatar(api_client, x_task_value):
     dto.model_dump(exclude_none=True)
 
     file_name = 'ava.jpg'
-    file_type = 'image/jpeg'
-    file_content = prepare_file(file_name, file_type)
-    update_response = api_client.upload_file(users.users[0].uuid, file_name, file_content, x_task_value)
+    file_content = prepare_file(file_name)
+    update_response = api_client.upload_avatar(users.users[0].uuid, file_name, file_content, x_task_value)
 
     updated_user = UserBase(**update_response.json())
     assert api_client.check_file_availability(updated_user.avatar_url).status_code == 200, "File wasn't saved"
