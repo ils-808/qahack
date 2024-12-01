@@ -45,6 +45,7 @@ jobs:
           ls -la tests/
           ls -la tests/endpoints
           cat tests/endpoints/ava.jpg || echo "File not found or unreadable"
+        if: always()
 
       - name: Run tests with Pytest
         env:
@@ -52,6 +53,7 @@ jobs:
         run: |
           mkdir -p ./allure-results
           pytest -n=auto --env=${{ github.event.inputs.ENV }} --alluredir=./allure-results -v
+        if: always()
 
       - name: Check allure-results directory
         if: always()
