@@ -8,10 +8,12 @@ def get_path(file_name):
     """
     Генерирует абсолютный путь к файлу относительно корня проекта.
     """
-    #file_path = PROJECT_ROOT / file_name
-    file_path = os.path.join(PROJECT_ROOT,file_name)
+    file_path = PROJECT_ROOT / file_name
     print(f"File path: {file_path}")
+    if not file_path.exists():
+        raise FileNotFoundError(f"File not found: {file_path}")
     return str(file_path)
+    #file_path = PROJECT_ROOT / file_name
 
 
 def prepare_file(file_name, file_type):
@@ -24,6 +26,7 @@ def prepare_file(file_name, file_type):
     """
     file_path = get_path(file_name)
     print(f"Preparing file: {file_path}")
-    return [
-        ('avatar_file', (file_name, open(file_path, 'rb'), file_type))
-    ]
+    with open(file_path, 'rb') as file:
+        return [
+            ('avatar_file', (file_name, file, file_type))
+        ]
