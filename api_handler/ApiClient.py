@@ -41,6 +41,14 @@ class ApiClient:
         """
         self.logger.info(f"Response [{response.status_code}]: {response.text}")
 
+    def setup(self,):
+        url = f"{self.base_url}/setup"
+
+        self.logger.info(f"Request: POST {url} | Headers: {self.headers}")
+        response = requests.post(url, headers=self.headers)
+        self.logger.info(f"Response [{response.status_code}]: {response.text}")
+        return response
+
     def search_game_by_name(self, search, headers):
         url = f"{self.base_url}/games/search"
 
@@ -262,7 +270,7 @@ class ApiClient:
         self.headers.update({"X-Task-Id": f"{headers}"})
         self.logger.info(f"Request: PATCH {url} | Headers: {self.headers}")
         response = requests.patch(url, headers=self.headers, json={
-            "status" : status
+            "status": status
         })
         self.logger.info(f"Response [{response.status_code}]: {response.text}")
         return response

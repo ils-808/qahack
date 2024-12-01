@@ -17,7 +17,7 @@ def pytest_addoption(parser):
     )
 
 
-@pytest.fixture
+@pytest.fixture(scope="session")
 def base_url(request):
     env = request.config.getoption("--env")
     url = ENVIRONMENTS.get(env)
@@ -26,9 +26,14 @@ def base_url(request):
     return url
 
 
-@pytest.fixture()
+@pytest.fixture(scope="session")
 def api_client(base_url):
     """
     Возвращает экземпляр API клиента с базовым URL.
     """
     return ApiClient(base_url=base_url)
+
+
+@pytest.fixture(scope="session", autouse=True)
+def setup_test(api_client):
+    api_client.setup()
