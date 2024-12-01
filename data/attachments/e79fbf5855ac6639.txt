@@ -1,3 +1,0 @@
-2024-12-01 16:59:03,969 - INFO - Request: GET https://dev-gs.qa-playground.com/api/v1/games/search | Params: {'query': 'Atomic Heart', 'offset': 0, 'limit': 10} | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-2'}
-2024-12-01 16:59:06,728 - INFO - Response [500]: {"code":500,"message":"Internal server error"}
-
