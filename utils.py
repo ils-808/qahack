@@ -2,7 +2,7 @@ from pathlib import Path
 
 
 def get_path(file_name):
-    return str(Path(__file__).parent.joinpath(f"{file_name}"))
+    return str(Path.cwd().joinpath(f"{file_name}"))
 
 
 def prepare_file(file_name, file_type):
