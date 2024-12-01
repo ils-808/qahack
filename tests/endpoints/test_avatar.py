@@ -12,6 +12,7 @@ f = faker.Faker()
 @allure.feature("User API")
 @allure.story("Update user avatar")
 @pytest.mark.parametrize("x_task_value", ["api-11"])
+@pytest.mark.skip("doesn't work in github currently")
 def test_update_avatar(api_client, x_task_value):
     users_response = api_client.get_users(x_task_value, 0)
     users = Users(**users_response.json())
