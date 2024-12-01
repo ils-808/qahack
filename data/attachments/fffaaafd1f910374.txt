@@ -1,6 +1,0 @@
-2024-12-01 15:39:30,885 - INFO - Request: POST https://dev-gs.qa-playground.com/api/v1/users | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-7'}
-2024-12-01 15:39:32,241 - INFO - Response [200]: {"avatar_url":"","email":"d4@l.66d","name":"David Myers","nickname":"xaviermoore","uuid":"20534a79-b3b6-4ddd-b941-bbb3e6f5a0e3"}
-
-2024-12-01 15:39:32,241 - INFO - Request: POST https://dev-gs.qa-playground.com/api/v1/users/login | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-7'}
-2024-12-01 15:39:33,246 - INFO - Response [404]: {"code":404,"message":"Could not find user with given credentials"}
-

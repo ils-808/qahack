@@ -1,0 +1,6 @@
+2024-12-01 15:42:47,540 - INFO - Request: POST https://release-gs.qa-playground.com/api/v1/users | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-7'}
+2024-12-01 15:42:48,580 - INFO - Response [200]: {"avatar_url":"","email":"d4@l.66d","name":"James Sanders","nickname":"justinalvarez","uuid":"f4c6382e-8791-4622-8b68-5ab1b9455007"}
+
+2024-12-01 15:42:48,580 - INFO - Request: POST https://release-gs.qa-playground.com/api/v1/users/login | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-7'}
+2024-12-01 15:42:50,194 - INFO - Response [200]: {"avatar_url":"","email":"d4@l.66d","name":"James Sanders","nickname":"justinalvarez","uuid":"f4c6382e-8791-4622-8b68-5ab1b9455007"}
+
