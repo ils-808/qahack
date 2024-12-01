@@ -23,6 +23,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Install Allure CLI
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y unzip
+          curl -sLo allure.zip https://github.com/allure-framework/allure2/releases/download/2.22.0/allure-2.22.0.zip
+          unzip allure.zip -d /opt/allure
+          sudo ln -s /opt/allure/allure-2.22.0/bin/allure /usr/local/bin/allure
+
       # Добавляем команду для проверки файлов
       - name: List files in working directory
         run: |
