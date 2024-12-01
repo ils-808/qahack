@@ -1,5 +1,5 @@
 from pathlib import Path
-
+import os
 # Получение корня проекта (например, где находится `pytest.ini` или `.git` папка)
 PROJECT_ROOT = Path(__file__).resolve().parent
 
@@ -8,7 +8,8 @@ def get_path(file_name):
     """
     Генерирует абсолютный путь к файлу относительно корня проекта.
     """
-    file_path = PROJECT_ROOT / file_name
+    #file_path = PROJECT_ROOT / file_name
+    file_path = os.path.join(PROJECT_ROOT,file_name)
     print(f"File path: {file_path}")
     return str(file_path)
 
