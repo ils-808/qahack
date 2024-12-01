@@ -5,7 +5,10 @@ from models.game_models import UserBase, Users
 import faker
 
 from utils import prepare_file
+
 f = faker.Faker()
+
+
 @allure.feature("User API")
 @allure.story("Update user avatar")
 @pytest.mark.parametrize("x_task_value", ["api-11"])
