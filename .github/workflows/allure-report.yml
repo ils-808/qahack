@@ -52,11 +52,11 @@ jobs:
       - name: Generate Allure Report
         if: always()
         run: |
-          allure generate ./allure-results -o allure-report --clean
+          allure generate ./allure-results -o ./allure-report --clean
 
       - name: Upload Allure Report as Artifact
         if: always()
         uses: actions/upload-artifact@v3
         with:
           name: allure-report
-          path: allure-report
+          path: ./allure-report
