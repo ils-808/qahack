@@ -91,7 +91,7 @@ class ApiClient:
 
         self.headers.update({"X-Task-Id": f"{headers}"})
         self.logger.info(f"Request: POST {url} | Headers: {self.headers}")
-        response = requests.post(url, headers=self.headers, json=user_data.dict())
+        response = requests.post(url, headers=self.headers, json=user_data.model_dump())
         self.logger.info(f"Response [{response.status_code}]: {response.text}")
         return response
 
@@ -128,7 +128,7 @@ class ApiClient:
 
         self.headers.update({"X-Task-Id": f"{headers}"})
         self.logger.info(f"Request: PATCH {url} | Headers: {self.headers}")
-        response = requests.patch(url, headers=self.headers, json=user_data.dict())
+        response = requests.patch(url, headers=self.headers, json=user_data.model_dump())
         self.logger.info(f"Response [{response.status_code}]: {response.text}")
         return response
 
@@ -137,7 +137,7 @@ class ApiClient:
 
         self.headers.update({"X-Task-Id": f"{headers}"})
         self.logger.info(f"Request: POST {url} | Headers: {self.headers}")
-        response = requests.post(url, headers=self.headers, json=user_data.dict())
+        response = requests.post(url, headers=self.headers, json=user_data.model_dump())
         self.logger.info(f"Response [{response.status_code}]: {response.text}")
         return response
 
@@ -182,7 +182,7 @@ class ApiClient:
 
         self.headers.update({"X-Task-Id": f"{headers}"})
         self.logger.info(f"Request: POST {url} | Headers: {self.headers}")
-        response = requests.post(url, headers=self.headers, json=cart.dict())
+        response = requests.post(url, headers=self.headers, json=cart.model_dump())
         self.logger.info(f"Response [{response.status_code}]: {response.text}")
         return response
 
@@ -211,7 +211,7 @@ class ApiClient:
 
         self.headers.update({"X-Task-Id": f"{headers}"})
         self.logger.info(f"Request: POST {url} | Headers: {self.headers}")
-        response = requests.post(url, headers=self.headers, json=cart.dict())
+        response = requests.post(url, headers=self.headers, json=cart.model_dump())
         self.logger.info(f"Response [{response.status_code}]: {response.text}")
         return response
 
@@ -280,7 +280,7 @@ class ApiClient:
 
         self.headers.update({"X-Task-Id": f"{headers}"})
         self.logger.info(f"Request: POST {url} | Headers: {self.headers}")
-        response = requests.post(url, headers=self.headers, json=payment.dict())
+        response = requests.post(url, headers=self.headers, json=payment.model_dump())
         self.logger.info(f"Response [{response.status_code}]: {response.text}")
         return response
 

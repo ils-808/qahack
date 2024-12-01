@@ -21,7 +21,7 @@ def test_add_item_wishlist(api_client, x_task_value):
         OrderItem(item_uuid=game_uuid, quantity=1),
     ])
 
-    response = api_client.order_create(user_uuid, order_data.dict(), x_task_value)
+    response = api_client.order_create(user_uuid, order_data.model_dump(), x_task_value)
 
     assert response.status_code == 400, "Duplicate items in order"
 
@@ -43,8 +43,8 @@ def test_orders_limit(api_client, x_task_value):
         OrderItem(item_uuid=game_uuid, quantity=1)
     ])
 
-    api_client.order_create(user_uuid, order_data.dict(), x_task_value)
-    api_client.order_create(user_uuid, order_data.dict(), x_task_value)
+    api_client.order_create(user_uuid, order_data.model_dump(), x_task_value)
+    api_client.order_create(user_uuid, order_data.model_dump(), x_task_value)
     limit = 1
     response = api_client.orders(user_uuid, limit, x_task_value)
     orders = OrdersResponse(**response.json())
@@ -69,7 +69,7 @@ def test_change_order_status(api_client, status, x_task_value):
         OrderItem(item_uuid=game_uuid, quantity=1)
     ])
 
-    api_client.order_create(user_uuid, order_data.dict(), x_task_value)
+    api_client.order_create(user_uuid, order_data.model_dump(), x_task_value)
     limit = 1
     create_response = api_client.orders(user_uuid, limit, x_task_value)
     orders = OrdersResponse(**create_response.json())

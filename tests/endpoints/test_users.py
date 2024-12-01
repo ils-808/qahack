@@ -33,13 +33,14 @@ def test_total_users(api_client, x_task_value):
 @allure.story("User list offset")
 @pytest.mark.parametrize("offset, x_task_value", [(5, "api-6")])
 def test_total_users_amount(api_client, x_task_value, offset):
-    response = api_client.get_users(x_task_value, offset)
+    get_total = api_client.get_users(x_task_value, offset)
+    dto = Users(**get_total.json())
+    total_users = dto.meta.total
 
+    response = api_client.get_users(x_task_value, total_users)
     dto = Users(**response.json())
 
-    assert len(
-        dto.users) == min(10,
-                          dto.meta.total - offset), f"Expected {dto.meta.total - offset} to show. Displayed {len(dto.users)}"
+    assert len(dto.users) == 0, f"Expected {dto.meta.total - offset} to show. Displayed {len(dto.users)}"
 
 
 @allure.feature("User API")

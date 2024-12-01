@@ -1,4 +1,8 @@
+import os
+
 import pytest
+from filelock import FileLock
+
 from api_handler.ApiClient import ApiClient
 
 # Конфигурация URL для разных сред
@@ -35,5 +39,26 @@ def api_client(base_url):
 
 
 @pytest.fixture(scope="session", autouse=True)
-def setup_test(api_client):
-    api_client.setup()
+def setup_test(api_client, worker_id):
+    lock_file = "setup.lock"
+
+    # Один процесс (мастер)
+    if worker_id == "master":
+        if not os.path.exists(lock_file + ".done"):
+            api_client.setup()
+            with open(lock_file + ".done", "w") as f:
+                f.write("done")
+    # Многопроцессорность
+    else:
+        with FileLock(lock_file + ".lock"):
+            if not os.path.exists(lock_file + ".done"):
+                api_client.setup()
+                with open(lock_file + ".done", "w") as f:
+                    f.write("done")
+
+    yield
+
+    if os.path.exists(lock_file + ".lock"):
+        os.remove(lock_file + ".lock")
+    if os.path.exists(lock_file + ".done"):
+        os.remove(lock_file + ".done")

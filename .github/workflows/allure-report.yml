@@ -42,7 +42,7 @@ jobs:
           ENV: ${{ github.event.inputs.ENV }}
         run: |
           mkdir -p ./allure-results
-          pytest --env=${{ github.event.inputs.ENV }} --alluredir=./allure-results -v
+          pytest -n=4 --env=${{ github.event.inputs.ENV }} --alluredir=./allure-results -v
 
       - name: Check allure-results directory
         if: always()
@@ -60,6 +60,7 @@ jobs:
         with:
           name: allure-report
           path: ./allure-report
+          retention-days: 1
 
       - name: Deploy to GitHub Pages
         if: always()

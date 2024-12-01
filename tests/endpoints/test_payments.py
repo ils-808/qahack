@@ -23,7 +23,7 @@ def test_validate_payment(api_client, x_task_value):
         OrderItem(item_uuid=game_uuid, quantity=1)
     ])
 
-    create_order = api_client.order_create(user_uuid, order_data.dict(), x_task_value)
+    create_order = api_client.order_create(user_uuid, order_data.model_dump(), x_task_value)
     orders = Order(**create_order.json())
     order_uuid = orders.uuid
 

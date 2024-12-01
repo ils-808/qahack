@@ -4,3 +4,5 @@ pydantic~=2.9.2
 allure-pytest~=2.13.5
 python-dotenv==1.0.1
 faker~=33.1.0
+filelock~=3.16.1
+pytest-xdist~=3.6.1
