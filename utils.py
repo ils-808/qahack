@@ -2,6 +2,7 @@ from pathlib import Path
 
 
 def get_path(file_name):
+    print(f"File path: {str(Path.cwd().joinpath(f"{file_name}"))}")
     return str(Path.cwd().joinpath(f"{file_name}"))
 
 
