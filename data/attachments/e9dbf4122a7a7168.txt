@@ -1,6 +1,0 @@
-2024-12-01 17:56:11,478 - INFO - Request: POST https://dev-gs.qa-playground.com/api/v1/users | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-7'}
-2024-12-01 17:56:12,499 - INFO - Response [200]: {"avatar_url":"","email":"d4@l.66d","name":"Thomas Mueller","nickname":"hannah71","uuid":"e994c68d-eb4e-4fbb-b82f-669a80a8283b"}
-
-2024-12-01 17:56:12,500 - INFO - Request: POST https://dev-gs.qa-playground.com/api/v1/users/login | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-7'}
-2024-12-01 17:56:13,350 - INFO - Response [404]: {"code":404,"message":"Could not find user with given credentials"}
-

@@ -1,0 +1,5 @@
+2024-12-01 18:01:42,674 - INFO - Request: POST https://dev-gs.qa-playground.com/api/v1/setup | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json'}
+2024-12-01 18:01:45,299 - INFO - Response [205]: 
+2024-12-01 18:01:45,301 - INFO - Request: POST https://dev-gs.qa-playground.com/api/v1/users | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-3'}
+2024-12-01 18:01:46,475 - INFO - Response [200]: {"avatar_url":"","email":"tinalarson@example.com","name":"Luis Rubio","nickname":"","uuid":"399237dc-ee5c-48ac-a467-4b621b0236e9"}
+
