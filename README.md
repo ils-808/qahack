@@ -28,6 +28,8 @@ pytest --env=prod -n=2 --alluredir=./allure-results
 `allure serve`
 
 ### Running Tests in Github CI/CD
+> write me to Discord, user: doingmybest_123. I'll add you as contributor, so you could run pipeline.
+
 1. Open the  <a target="_blank" href="https://github.com/ils-808/qahack/actions/workflows/allure-report.yml">workflow</a> section
 2. Click on `Run workflow'
 3. In the `Environment to run the tests (dev or prod)`field, specify `dev` or `prod`
