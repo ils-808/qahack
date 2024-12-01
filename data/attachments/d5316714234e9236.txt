@@ -1,5 +1,0 @@
-INFO     ApiClient:ApiClient.py:93 Request: POST https://dev-gs.qa-playground.com/api/v1/users | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-7'}
-INFO     ApiClient:ApiClient.py:95 Response [200]: {"avatar_url":"","email":"d4@l.66d","name":"Erik Chan","nickname":"scottbennett","uuid":"32820a6e-87ed-4b5e-84c4-1b3594eefe32"}
-
-INFO     ApiClient:ApiClient.py:139 Request: POST https://dev-gs.qa-playground.com/api/v1/users/login | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-7'}
-INFO     ApiClient:ApiClient.py:141 Response [404]: {"code":404,"message":"Could not find user with given credentials"}

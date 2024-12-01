@@ -1,6 +1,0 @@
-2024-12-01 17:51:06,675 - INFO - Request: POST https://dev-gs.qa-playground.com/api/v1/users | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-7'}
-2024-12-01 17:51:07,726 - INFO - Response [200]: {"avatar_url":"","email":"d4@l.66d","name":"Erik Chan","nickname":"scottbennett","uuid":"32820a6e-87ed-4b5e-84c4-1b3594eefe32"}
-
-2024-12-01 17:51:07,726 - INFO - Request: POST https://dev-gs.qa-playground.com/api/v1/users/login | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-7'}
-2024-12-01 17:51:08,249 - INFO - Response [404]: {"code":404,"message":"Could not find user with given credentials"}
-
