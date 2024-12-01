@@ -23,6 +23,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # Добавляем команду для проверки файлов
+      - name: List files in working directory
+        run: |
+          ls -la
+          ls -la tests/endpoints
+
       - name: Run tests with Pytest
         env:
           ENV: ${{ github.event.inputs.ENV }}
