@@ -1,6 +1,0 @@
-2024-12-01 18:04:36,252 - INFO - Request: POST https://dev-gs.qa-playground.com/api/v1/users | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-7'}
-2024-12-01 18:04:37,559 - INFO - Response [200]: {"avatar_url":"","email":"d4@l.66d","name":"Amanda Armstrong","nickname":"james52","uuid":"409fe430-2156-414f-90f0-6a8dc6ea3ce3"}
-
-2024-12-01 18:04:37,559 - INFO - Request: POST https://dev-gs.qa-playground.com/api/v1/users/login | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-7'}
-2024-12-01 18:04:38,515 - INFO - Response [404]: {"code":404,"message":"Could not find user with given credentials"}
-
