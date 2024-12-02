@@ -163,7 +163,7 @@ class ApiClient:
         """
 
         self.logger.info(f"Request: GET {file_url} | Headers: {self.headers}")
-        response = requests.get(file_url)
+        response = requests.get(file_url, timeout=50)
         self.logger.info(f"Response [{response.status_code}]: {response.text}")
         return response
 
