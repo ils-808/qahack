@@ -45,12 +45,12 @@ pytest --env=prod -n=2 --alluredir=./allure-results
 > It can be downloaded and run with the command `allure generate ./allure-results -o ./allure-report --clean`
 
 ##### Example of pipeline runned successfully on PROD env
- <a target="_blank" href="https://github.com/ils-808/qahack/actions/runs/12120259622">Test Execution pipeline</a>
- <a target="_blank" href="https://github.com/ils-808/qahack/actions/runs/12120278025">Report publishing pipeline</a>
- <a target="_blank" href="https://ils-808.github.io/qahack/98/index.html">Generated report</a>
+ <a target="_blank" href="https://github.com/ils-808/qahack/actions/runs/12120259622">Test Execution pipeline</a> <br>
+ <a target="_blank" href="https://github.com/ils-808/qahack/actions/runs/12120278025">Report publishing pipeline</a> <br>
+ <a target="_blank" href="https://ils-808.github.io/qahack/98/index.html">Generated report</a> <br>
  
  
 ##### Example of pipeline runned unsuccessfully on DEV env
- <a target="_blank" href="https://github.com/ils-808/qahack/actions/runs/12120341148">Test Execution pipeline</a>
- <a target="_blank" href="https://github.com/ils-808/qahack/actions/runs/12120360228">Report publishing</a>
- <a target="_blank" href="https://ils-808.github.io/qahack/100/index.html">Generated report</a>
+ <a target="_blank" href="https://github.com/ils-808/qahack/actions/runs/12120341148">Test Execution pipeline</a> <br>
+ <a target="_blank" href="https://github.com/ils-808/qahack/actions/runs/12120360228">Report publishing</a> <br>
+ <a target="_blank" href="https://ils-808.github.io/qahack/100/index.html">Generated report</a> <br>
