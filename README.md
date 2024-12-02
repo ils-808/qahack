@@ -2,10 +2,11 @@
 
 ### Local Test Run
 #### To run the tests in the CLI:
-1. Pull the project
-2. Install the latest version of Python. During installation, select Add python to PATH
-3. Open the project in the CLI
-4. Perform the steps below
+1. Install Python 3.12
+2. Pull the project
+3. Install the latest version of Python. During installation, select Add python to PATH
+4. Open the project in the CLI
+5. Perform the steps below
 ##### Windows
 ```bash
 python -m venv .venv
@@ -15,8 +16,10 @@ pytest --env=prod -n=2 --alluredir=./allure-results
 ```
 ##### *nix
 ```bash
-python -m venv .venv
-source .venv/Scripts/activate
+sudo apt install -y python3-pip
+sudo apt install -y python3-venv
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 pytest --env=prod -n=2 --alluredir=./allure-results
 ```
