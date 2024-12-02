@@ -144,11 +144,11 @@ class ApiClient:
     def upload_avatar(self, user_uuid, file_name, file_content, headers):
         url = f"{self.base_url}/users/{user_uuid}/avatar"
 
-        print("create files object")
+        self.logger.info("create files object")
         files = {
-            ('avatar_file', (file_name, file_content, 'image/jpeg'))
+            "avatar_file": (file_name, file_content, "image/jpeg")
         }
-        print("created files object")
+        self.logger.info("created files object")
 
         self.headers.update({"X-Task-Id": f"{headers}"})
         self.logger.info(f"Request: PUT {url} | Headers: {self.headers}")
@@ -165,7 +165,6 @@ class ApiClient:
             print(f"HTTP ошибка: {http_err}")
         except requests.exceptions.RequestException as req_err:
             print(f"Произошла ошибка в запросе: {req_err}")
-
 
     def check_file_availability(self, file_url):
         """
