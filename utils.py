@@ -7,7 +7,7 @@ workspace_path = os.getenv("GITHUB_WORKSPACE", "/home/runner/work/unknown-repo/u
 def get_path(file_name):
     if workspace_path != "/home/runner/work/unknown-repo/unknown-repo":
         print("Код выполняется на GitHub")
-        return workspace_path
+        return workspace_path+"/"+file_name
     else:
         path = Path(__file__).parent.joinpath(f"{file_name}")
         print(f"Код выполняется на Winodws: {path}")
