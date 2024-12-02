@@ -1,10 +1,17 @@
+import os
 from pathlib import Path
+
+workspace_path = os.getenv("GITHUB_WORKSPACE", "/home/runner/work/unknown-repo/unknown-repo")
 
 
 def get_path(file_name):
-    path = Path(__file__).parent.joinpath(f"{file_name}")
-    print(f"get_path resolved file path: {path}")
-    return str(path)
+    if workspace_path != "/home/runner/work/unknown-repo/unknown-repo":
+        print("Код выполняется на GitHub")
+        return workspace_path
+    else:
+        path = Path(__file__).parent.joinpath(f"{file_name}")
+        print(f"Код выполняется на Winodws: {path}")
+        return str(path)
 
 
 def prepare_file(file_name):

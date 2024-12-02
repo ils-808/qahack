@@ -40,14 +40,9 @@ jobs:
           cat tests/endpoints/ava.jpg || echo "File not found or unreadable"
         if: always()
 
-      - name: Check and prepare file
-        run: |
-          python -c "from your_module import prepare_file; prepare_file('tests/endpoints/ava.jpg')"
-        if: always()
-
       - name: Run tests with Pytest
         env:
           ENV: ${{ github.event.inputs.ENV }}
         run: |
-          pytest --env=${{ github.event.inputs.ENV }}  .\tests\endpoints\test_avatar.py::test_file_preparation -vv -s
+          pytest --env=${{ github.event.inputs.ENV }} .\tests\endpoints\test_avatar.py::test_file_preparation -vv -s
         if: always()
