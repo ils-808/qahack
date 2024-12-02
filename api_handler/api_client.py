@@ -155,6 +155,8 @@ class ApiClient:
         try:
             response = requests.put(url, headers=self.headers, files=files, timeout=15)
             response.raise_for_status()
+            self.logger.info(f"Response [{response.status_code}]: {response.text}")
+            return response
         except requests.exceptions.Timeout:
             print("Превышено время ожидания запроса.")
         except requests.exceptions.ConnectionError:
@@ -164,8 +166,6 @@ class ApiClient:
         except requests.exceptions.RequestException as req_err:
             print(f"Произошла ошибка в запросе: {req_err}")
 
-        self.logger.info(f"Response [{response.status_code}]: {response.text}")
-        return response
 
     def check_file_availability(self, file_url):
         """
