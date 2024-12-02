@@ -7,7 +7,7 @@ workspace_path = os.getenv("GITHUB_WORKSPACE", "/home/runner/work/unknown-repo/u
 def get_path(file_name):
     if workspace_path != "/home/runner/work/unknown-repo/unknown-repo":
         print("Код выполняется на GitHub")
-        return workspace_path+"/"+file_name
+        return workspace_path + "/" + file_name
     else:
         path = Path(__file__).parent.joinpath(f"{file_name}")
         print(f"Код выполняется на Winodws: {path}")
@@ -21,7 +21,7 @@ def prepare_file(file_name):
     :param file_name: Имя файла для загрузки.
     :return: Кортеж с параметрами для передачи файла.
     """
-    file_path = get_path(file_name)
+    file_path = "/home/runner/work/qahack/qahack/ava.jpg"  # get_path(file_name)
     print(f"Preparing file: {file_path}")
     try:
         with open(file_path, 'rb') as file:
