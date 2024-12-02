@@ -1,11 +1,11 @@
 import os
 from pathlib import Path
 
-workspace_path = os.getenv("GITHUB_WORKSPACE", "/home/runner/work/unknown-repo/unknown-repo")
+workspace_path = os.getenv("GITHUB_WORKSPACE", "/home/runner/work/qahack/qahack")
 
 
 def get_path(file_name):
-    if workspace_path != "/home/runner/work/unknown-repo/unknown-repo":
+    if workspace_path != "/home/runner/work/qahack/qahack":
         print("Код выполняется на GitHub")
         return workspace_path+"/"+file_name
     else:

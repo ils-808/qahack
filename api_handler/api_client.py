@@ -141,7 +141,7 @@ class ApiClient:
         self.logger.info(f"Response [{response.status_code}]: {response.text}")
         return response
 
-    def upload_avatar(self, user_uuid, file_name, file_content, headers):
+    def upload_avatar(self, user_uuid, file_name, file_path, headers):
         url = f"{self.base_url}/users/{user_uuid}/avatar"
 
         self.logger.info("create files object")
@@ -149,7 +149,7 @@ class ApiClient:
         #     "avatar_file": (file_name, file_content, "image/jpeg")
         # }
         files = {
-            "avatar_file": ("ava.jpeg", open("/home/runner/work/qahack/qahack/ava.jpeg"), "image/jpeg")  # Задаем имя файла, содержимое и MIME-тип
+            "avatar_file": (file_name, open(file_path), "image/jpeg")  # Задаем имя файла, содержимое и MIME-тип
         }
         self.logger.info("created files object")
 
