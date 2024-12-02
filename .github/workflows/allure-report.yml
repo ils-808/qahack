@@ -31,12 +31,6 @@ jobs:
           unzip allure.zip -d /opt/allure
           sudo ln -s /opt/allure/allure-2.22.0/bin/allure /usr/local/bin/allure
 
-      # Добавляем команду для проверки файлов
-      - name: Check test file existence
-        run: |
-          cat /home/runner/work/qahack/qahack/ava.jpg || echo "File not found or unreadable"
-        if: always()
-
       - name: Run tests with Pytest
         env:
           ENV: ${{ github.event.inputs.ENV }}

@@ -20,7 +20,7 @@ def test_update_avatar(api_client, x_task_value):
     dto = UserBase(email=users.users[0].email, name=f.name(), nickname=users.users[0].nickname)
     dto.model_dump(exclude_none=True)
 
-    file_name = 'ava.jpg'
+    file_name = 'ava.jpeg'
     file_content = prepare_file(file_name)
     update_response = api_client.upload_avatar(users.users[0].uuid, file_name, file_content, x_task_value)
 

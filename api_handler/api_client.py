@@ -148,7 +148,9 @@ class ApiClient:
         # files = {
         #     "avatar_file": (file_name, file_content, "image/jpeg")
         # }
-        files = {'file': file_content}
+        files = {
+            "avatar_file": ("asd", file_content, "image/jpeg")  # Задаем имя файла, содержимое и MIME-тип
+        }
         self.logger.info("created files object")
 
         self.headers.update({"X-Task-Id": f"{headers}"})
