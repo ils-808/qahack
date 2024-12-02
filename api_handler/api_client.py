@@ -153,7 +153,7 @@ class ApiClient:
         self.headers.update({"X-Task-Id": f"{headers}"})
         self.logger.info(f"Request: PUT {url} | Headers: {self.headers}")
         try:
-            response = requests.put(url, headers=self.headers, files=files, timeout=15)
+            response = requests.put(url, headers=self.headers, files=files)
             response.raise_for_status()
             self.logger.info(f"Response [{response.status_code}]: {response.text}")
             return response
