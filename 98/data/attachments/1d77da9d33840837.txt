@@ -1,0 +1,5 @@
+INFO     ApiClient:api_client.py:93 Request: POST https://release-gs.qa-playground.com/api/v1/users | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-7'}
+INFO     ApiClient:api_client.py:95 Response [200]: {"avatar_url":"","email":"d4@l.66d","name":"Brandon Davis","nickname":"samanthaprice","uuid":"4b4d572a-de81-440b-8f50-fab4517a7639"}
+
+INFO     ApiClient:api_client.py:139 Request: POST https://release-gs.qa-playground.com/api/v1/users/login | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-7'}
+INFO     ApiClient:api_client.py:141 Response [200]: {"avatar_url":"","email":"d4@l.66d","name":"Brandon Davis","nickname":"samanthaprice","uuid":"4b4d572a-de81-440b-8f50-fab4517a7639"}

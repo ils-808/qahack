@@ -1,0 +1,3 @@
+2024-12-02 13:23:08,381 - INFO - Request: GET https://release-gs.qa-playground.com/api/v1/games/search | Params: {'query': 'Atomic Heart', 'offset': 0, 'limit': 10} | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-2'}
+2024-12-02 13:23:09,092 - INFO - Response [200]: {"games":[{"category_uuids":["e86aecef-fe7a-4164-a324-57503df14ab9"],"price":5999,"title":"Atomic Heart","uuid":"1990ecdd-4d3d-4de2-91b9-d45d794c82bc"}],"meta":{"total":1}}
+
