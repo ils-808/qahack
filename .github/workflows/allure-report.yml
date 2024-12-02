@@ -41,7 +41,7 @@ jobs:
         if: always()
 
       - name: Debug file existence
-        run: ls -al ./qahack
+        run: ls -al ./qahack/ava.jpg
 
       - name: Check file permissions
         run: ls -l ./qahack/ava.jpg
