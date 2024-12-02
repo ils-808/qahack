@@ -1,0 +1,3 @@
+2024-12-02 13:27:38,071 - INFO - Request: POST https://dev-gs.qa-playground.com/api/v1/users | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-3'}
+2024-12-02 13:27:39,103 - INFO - Response [200]: {"avatar_url":"","email":"david54@example.org","name":"Lori Calderon","nickname":"","uuid":"77301ed2-d24f-4a73-9a64-180d1b88eed7"}
+
