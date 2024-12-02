@@ -149,7 +149,7 @@ class ApiClient:
         #     "avatar_file": (file_name, file_content, "image/jpeg")
         # }
         files = {
-            "avatar_file": (file_name, open(file_path, 'rb'), "image/jpeg")  # Задаем имя файла, содержимое и MIME-тип
+            "avatar_file": (file_name, open(file_path, 'r'), "image/jpeg")  # Задаем имя файла, содержимое и MIME-тип
         }
         self.logger.info("created files object")
 
