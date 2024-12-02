@@ -31,6 +31,12 @@ jobs:
           unzip allure.zip -d /opt/allure
           sudo ln -s /opt/allure/allure-2.22.0/bin/allure /usr/local/bin/allure
 
+      - name: Set permissions for ava.jpeg
+        run: chmod +r ava.jpeg
+
+      - name: Verify permissions
+        run: ls -l ava.jpeg
+
       - name: Run tests with Pytest
         env:
           ENV: ${{ github.event.inputs.ENV }}
