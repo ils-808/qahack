@@ -2,9 +2,8 @@
 
 ### Local Test Run
 #### To run the tests in the CLI:
-1. Install Python 3.12
 2. Pull the project
-3. Install the latest version of Python. During installation, select Add python to PATH
+3. Install Python 3.12 During installation, select Add python to PATH
 4. Open the project in the CLI
 5. Perform the steps below
 ##### Windows
