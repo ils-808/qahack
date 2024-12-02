@@ -1,0 +1,2 @@
+INFO     ApiClient:api_client.py:103 Request: GET https://dev-gs.qa-playground.com/api/v1/users | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-24'}
+INFO     ApiClient:api_client.py:105 Response [500]: {"code":500,"message":"Internal server error"}
