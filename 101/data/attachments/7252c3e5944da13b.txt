@@ -1,0 +1,4 @@
+INFO     ApiClient:api_client.py:47 Request: POST https://dev-gs.qa-playground.com/api/v1/setup | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json'}
+INFO     ApiClient:api_client.py:49 Response [500]: {"code":500,"message":"Internal server error"}
+INFO     ApiClient:api_client.py:75 Request: GET https://dev-gs.qa-playground.com/api/v1/games | Params: {'query': None, 'offset': 0, 'limit': 10} | Headers: {'Authorization': 'Bearer qahack2024:ilyastetsun@gmail.com', 'Accept': 'application/json', 'X-Task-Id': 'api-12'}
+INFO     ApiClient:api_client.py:77 Response [500]: {"code":500,"message":"Internal server error"}
