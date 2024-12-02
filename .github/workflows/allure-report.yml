@@ -34,17 +34,14 @@ jobs:
       # Добавляем команду для проверки файлов
       - name: Check test file existence
         run: |
-          ls -la tests/
-          ls -la tests/endpoints
-          cat tests/endpoints/ava.jpg || echo "File not found or unreadable"
-          cat tests/endpoints/ava.jpg || echo "File not found or unreadable"
+          cat /home/runner/work/qahack/qahack/ava.jpg || echo "File not found or unreadable"
         if: always()
 
       - name: Debug file existence
-        run: ls -al ./qahack/ava.jpg
+        run: ls -al /home/runner/work/qahack/qahack/ava.jpg
 
       - name: Check file permissions
-        run: ls -l ./qahack/ava.jpg
+        run: ls -l /home/runner/work/qahack/qahack/ava.jpg
 
       - name: Upload avatar using curl
         run: |
