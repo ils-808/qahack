@@ -145,15 +145,16 @@ class ApiClient:
         url = f"{self.base_url}/users/{user_uuid}/avatar"
 
         self.logger.info("create files object")
-        files = {
-            "avatar_file": (file_name, file_content, "image/jpeg")
-        }
+        # files = {
+        #     "avatar_file": (file_name, file_content, "image/jpeg")
+        # }
+        files = {'file': file_content}
         self.logger.info("created files object")
 
         self.headers.update({"X-Task-Id": f"{headers}"})
         self.logger.info(f"Request: PUT {url} | Headers: {self.headers}")
         try:
-            response = requests.put(url, headers=self.headers)#, files=files
+            response = requests.put(url, headers=self.headers, files=files)
             response.raise_for_status()
             self.logger.info(f"Response [{response.status_code}]: {response.text}")
             return response
