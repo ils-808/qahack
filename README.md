@@ -2,10 +2,10 @@
 
 ### Local Test Run
 #### To run the tests in the CLI:
-2. Pull the project
-3. Install Python 3.12 During installation, select Add python to PATH
-4. Open the project in the CLI
-5. Perform the steps below
+1. Pull the project
+2. Install Python 3.12 During installation, select Add python to PATH
+3. Open the project in the CLI
+4. Perform the steps below
 ##### Windows
 ```bash
 python -m venv .venv
