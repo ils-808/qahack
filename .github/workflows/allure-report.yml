@@ -37,20 +37,6 @@ jobs:
           cat /home/runner/work/qahack/qahack/ava.jpg || echo "File not found or unreadable"
         if: always()
 
-      - name: Debug file existence
-        run: ls -al /home/runner/work/qahack/qahack/ava.jpg
-
-      - name: Check file permissions
-        run: ls -l /home/runner/work/qahack/qahack/ava.jpg
-
-      - name: Upload avatar using curl
-        run: |
-          curl -X PUT "https://dev-gs.qa-playground.com/api/v1/users/c76a0035-552e-41c2-bef0-d18e5a833b87/avatar" \
-          -H "Authorization: Bearer ${{ secrets.AUTH_TOKEN }}" \
-          -H "Accept: application/json" \
-          -H "X-Task-Id: api-11" \
-          -F "avatar_file=@qahack/ava.jpg;type=image/jpeg"
-
       - name: Run tests with Pytest
         env:
           ENV: ${{ github.event.inputs.ENV }}
