@@ -45,4 +45,3 @@ jobs:
           ENV: ${{ github.event.inputs.ENV }}
         run: |
           pytest --env=${{ github.event.inputs.ENV }} ./tests/endpoints/test_avatar.py::test_update_avatar -vv -s
-        if: always()

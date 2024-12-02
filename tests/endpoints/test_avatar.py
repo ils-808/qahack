@@ -25,7 +25,8 @@ def test_update_avatar(api_client, x_task_value):
     update_response = api_client.upload_avatar(users.users[0].uuid, file_name, file_content, x_task_value)
 
     updated_user = UserBase(**update_response.json())
-    assert api_client.check_file_availability(updated_user.avatar_url).status_code == 200, "File wasn't saved"
+    response = api_client.check_file_availability(updated_user.avatar_url)
+    assert response.status_code == 200, "File wasn't saved"
 #
 # def test_file_preparation():
 #     try:
