@@ -3,7 +3,7 @@ from pathlib import Path
 
 def get_path(file_name):
     path = Path(__file__).parent.joinpath(f"{file_name}")
-    print(f"Resolved file path: {path}")
+    print(f"get_path resolved file path: {path}")
     return str(path)
 
 
